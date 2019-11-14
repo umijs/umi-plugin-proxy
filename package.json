@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-proxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Resource proxy function, you can point online resources to local resources, support https and solve combob",
   "authors": {
     "name": "自羽",
@@ -13,16 +13,16 @@
     "react-dom": "^16.8.6",
     "umi": "^2.11.2"
   },
-  "main":  "lib/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start:mini": "cross-env UMI_UI=1 APP_ROOT=$PWD/example umi dev",
     "start": "cross-env CURRENT_PROJECT=example umi ui",
-    "build":  "father-build",
+    "build": "father-build",
     "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
-    "father-build":  "^1.8.0",
+    "father-build": "^1.8.0",
     "antd": "^4.0.0-alpha.0",
     "np": "^5.0.3",
     "umi": "^2.11.2",

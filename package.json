@@ -1,0 +1,52 @@
+{
+  "name": "umi-plugin-proxy",
+  "version": "0.0.1",
+  "description": "Resource proxy function, you can point online resources to local resources, support https and solve combob",
+  "authors": {
+    "name": "自羽",
+    "email": "caozheng.caozheng@alibaba-inc.com"
+  },
+  "repository": "umijs/umi-plugin-proxy",
+  "peerDependencies": {
+    "antd": "4.x",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "umi": "^2.11.2"
+  },
+  "main":  "lib/index.js",
+  "scripts": {
+    "start:mini": "cross-env UMI_UI=1 APP_ROOT=$PWD/example umi dev",
+    "start": "cross-env CURRENT_PROJECT=example umi ui",
+    "build":  "father-build",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "father-build":  "^1.8.0",
+    "antd": "^4.0.0-alpha.0",
+    "np": "^5.0.3",
+    "umi": "^2.11.2",
+    "umi-types": ">= 0.4.0-beta.4"
+  },
+  "dependencies": {
+    "anyproxy": "^4.1.0",
+    "mkcert-prebuilt-cdn": "^1.0.2",
+    "fie-api": "^3.1.0",
+    "cross-spawn": "^5.1.0",
+    "fs-extra": "^4.0.1",
+    "mime-types": "^2.1.16",
+    "request": "^2.83.0",
+    "yargs": "^10.0.3",
+    "commander": "^2.11.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/runtime": "^7.6.3"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "ui"
+  ],
+  "license": "MIT"
+}

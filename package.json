@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-proxy",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Resource proxy function, you can point online resources to local resources, support https and solve combob",
   "authors": {
     "name": "自羽",
